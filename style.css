@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.container {
+  flex: 0 0 400px; /* shrink grow 0 */
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 50px;
+  background-color: lightgrey;
+}
+.display {
+  text-align: right;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+.pastScreen {
+  font-size: 25px;
+  min-height: 25px;
+  margin-bottom: 10px;
+}
+.presentScreen {
+  font-size: 50px;
+  min-height: 50px;
+}
+
+.modify {
+  display: flex;
+  min-height: 80px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.clear,
+.delete {
+  flex: 1;
+  font-size: 25px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.clear:hover,
+.delete:hover {
+  filter: brightness(75%) saturate(120%);
+}
+.clear {
+  background-color: lightcoral;
+}
+.delete {
+  background-color: lightblue;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.grid-item {
+  padding: 25px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+}
+
+.grid-item:hover {
+  filter: brightness(75%) saturate(120%);
+}
