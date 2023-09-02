@@ -1,6 +1,7 @@
 body {
   display: flex;
-  font-family: sans-serif;
+  font-family: "Courier New", sans-serif;
+  font-weight: 700;
   justify-content: center;
 }
 
@@ -13,22 +14,16 @@ body {
   margin: 50px;
   background-color: lightgrey;
 }
+
 .display {
   text-align: right;
   background-color: white;
   border-radius: 10px;
   border: 2px solid black;
   margin-bottom: 20px;
-  padding: 10px 20px;
-}
-.pastScreen {
-  font-size: 25px;
-  min-height: 25px;
-  margin-bottom: 10px;
-}
-.presentScreen {
-  font-size: 50px;
-  min-height: 50px;
+  padding: 20px 40px;
+  font-size: 60px;
+  min-height: 69px;
 }
 
 .modify {
@@ -37,23 +32,28 @@ body {
   gap: 10px;
   margin-bottom: 20px;
 }
+
 .clear,
 .delete {
   flex: 1;
-  font-size: 25px;
+  font-size: 30px;
   border: 2px solid black;
   border-radius: 5px;
 }
+
+.clear {
+  background-color: lightcoral;
+}
+
+.delete {
+  background-color: lightblue;
+}
+
 .clear:hover,
 .delete:hover {
   filter: brightness(75%) saturate(120%);
 }
-.clear {
-  background-color: lightcoral;
-}
-.delete {
-  background-color: lightblue;
-}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -62,15 +62,21 @@ body {
   row-gap: 10px;
 }
 
-.grid-item {
+.number,
+.operator,
+.equals,
+.period {
   padding: 25px;
-  font-size: 20px;
+  font-size: 30px;
   border: 2px solid black;
   border-radius: 5px;
   background-color: grey;
   color: white;
 }
 
-.grid-item:hover {
+.number:hover,
+.operator:hover,
+.equals:hover,
+.period:hover {
   filter: brightness(75%) saturate(120%);
 }
