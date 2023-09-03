@@ -92,9 +92,6 @@ const divide = function (a, b) {
 };
 
 const operate = function () {
-  console.log(operator);
-  console.log(number1);
-  console.log(number2);
   switch (operator) {
     case "+":
       add(number1, number2);
